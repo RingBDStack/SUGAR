@@ -1,0 +1,47 @@
+ENZYMES contains the following comma separated text files:
+
+n: total number of nodes
+m: total number of edges
+N: number of graphs
+
+
+*.node_attrs (n lines) 
+	matrix of node attributes,
+	the comma seperated values in the i-th line is the attribute vector of the node with node_id i
+
+*.node_labels (n lines)
+	column vector of node labels,
+	the value in the i-th line corresponds to the node with node_id i
+
+*.edges (m lines) 
+	sparse (block diagonal) adjacency matrix for all graphs,
+	each line corresponds to (row, col) resp. (node_id, node_id)
+
+*.graph_labels (N lines)
+	class labels for all graphs in the dataset,
+	the value in the i-th line is the class label of the graph with graph_id i
+
+*.graph_idx (n lines)
+	column vector of graph identifiers for all nodes of all graphs,
+	the value in the i-th line is the graph_id of the node with node_id i
+
+--- Description --- 
+
+ENZYMES is a dataset of protein tertiary structures obtained from (Borgwardt et al., 2005) 
+consisting of 600 enzymes from the BRENDA enzyme database (Schomburg et al., 2004). 
+In this case the task is to correctly assign each enzyme to one of the 6 EC top-level 
+classes. 
+
+
+
+
+Please cite the following if you use the data:
+
+@inproceedings{networkrepo,
+    title = {The Network Data Repository with Interactive Graph Analytics and Visualization},
+    author={Ryan A. Rossi and Nesreen K. Ahmed},
+    booktitle = {AAAI},
+    url={http://networkrepository.com},
+    year={2015}
+}
+
