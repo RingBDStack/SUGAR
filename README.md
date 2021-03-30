@@ -1,8 +1,8 @@
-SUGAR
+# SUGAR
 
 Code for "[SUGAR: Subgraph Neural Network with Reinforcement Pooling and Self-Supervised Mutual Information Mechanism](https://arxiv.org/abs/2101.08170)"
 
-Overview
+## Overview
 
 - train.py: the core of our model, including the structure and the process of training.
 - env.py, QLearning.py: the code about RL method
@@ -14,7 +14,7 @@ Overview
   - sub_adj.npy: the Adjacency Matrix of subgraph through sampling
   - features.npy: the pre-processed features of each subgraph
 
-Datasets
+## Datasets
 
 - MUTAG: The MUTAG dataset consists of 188 chemical compounds divided into two
   classes according to their mutagenic effect on a bacterium.
@@ -30,14 +30,14 @@ Datasets
   In this case the task is to correctly assign each enzyme to one of the 6 EC top-level
   classes.
 
-Setting
+## Setting
 
 1. setting python env using pip install -r requirements.txt
 2. cd ./dataset &python transform.py --dataset MUTAG
 3.  python train.py(all the parameters could be viewed in the train.py)
 
-parameters
-
+## Parameters
+````
      --dataset DATASET
      --num_info NUM_INFO
      --lr LR (learning_rate)
@@ -48,3 +48,14 @@ parameters
      --sg_encoder SG_ENCODER(GIN, GCN, GAT, SAGE)
      --MI_loss MI_LOSS
      --start_k START_K
+ ````
+
+## Reference
+````
+@nproceedings{sun2021sugar,
+  title={SUGAR: Subgraph Neural Network with Reinforcement Pooling and Self-Supervised Mutual Information Mechanism},
+  author={Sun, Qingyun and Li, Jianxin and Peng, Hao and Wu, Jia and Ning, Yuanxing and Yu, Phillip S and He, Lifang},
+  booktitle={Proceedings of the 2021 World Wide Web Conference},
+  year={2021}
+}
+````
