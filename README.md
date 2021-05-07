@@ -52,7 +52,7 @@ Code for "[SUGAR: Subgraph Neural Network with Reinforcement Pooling and Self-Su
 
 ## Reference
 ````
-@nproceedings{sun2021sugar,
+@inproceedings{sun2021sugar,
   title={SUGAR: Subgraph Neural Network with Reinforcement Pooling and Self-Supervised Mutual Information Mechanism},
   author={Sun, Qingyun and Li, Jianxin and Peng, Hao and Wu, Jia and Ning, Yuanxing and Yu, Phillip S and He, Lifang},
   booktitle={Proceedings of the 2021 World Wide Web Conference},
